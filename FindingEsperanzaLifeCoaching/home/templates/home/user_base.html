@@ -1,0 +1,28 @@
+{% load i18n wagtailcore_tags %}
+{% load static %}
+<!doctype html>
+<html>
+    <head>
+        <title>Finding Esperanza Life Coaching - {% block title %}{% endblock title %}</title>
+        <link rel="shortcut icon" href={% static "findingesperanza.ico" %} type="image/x-icon" />
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <link rel="stylesheet" href="style.css" />
+
+        <!-- still need to add menu bar, logo - each page may have own header photo -->
+
+        {% block head %}{% endblock %}
+    </head>
+
+    <nav></nav>
+
+    <body>
+        <div id="content">{% block content %}{% endblock %}</div>
+        <div id="footer">
+            {% block footer %}
+                &copy; Copyright 2019 by <a href="http://findingesperanzalifecoaching.com/">Finding Esperanza Life Coaching</a>.
+            {% endblock %}
+        </div>
+    </body>
+</html>
