@@ -29,8 +29,7 @@ INSTALLED_APPS = [
     'search',
 
     'commonblocks',
-    'wagtail.contrib.wagtailsitemaps',
-
+    'wagtail.contrib.sitemaps',
 
     'wagtail.contrib.forms',
     'wagtail.contrib.redirects',
