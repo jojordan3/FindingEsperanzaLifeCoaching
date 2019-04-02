@@ -11,6 +11,7 @@ psycopg2-binary = "*"
 gunicorn = "*"
 python-decouple = "*"
 wagtailcommonblocks = "*"
+django-redis = "*"
 
 [requires]
 python_version = "3.6"
